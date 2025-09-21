@@ -11,7 +11,7 @@ export const MockTwitterProfile = {
   id: 1,
   profile_name: 'npwd admin',
   identifier: '421431414441124124',
-  avatar_url: 'https://i.fivemanage.com/images/3ClWwmpwkFhL.png',
+  avatar_url: 'https://i.fmfile.com/images/3ClWwmpwkFhL.png',
   bio: 'Please no ERP',
   location: 'In my admin car',
   job: '',

@@ -91,7 +91,7 @@ const ContactsInfoPage: React.FC = () => {
   const [name, setName] = useState(contact?.display ?? '');
   const [number, setNumber] = useState(contact?.number ?? '');
   const [avatar, setAvatar] = useState(
-    contact?.avatar ?? 'https://i.fivemanage.com/images/3ClWwmpwkFhL.png',
+    contact?.avatar ?? 'https://i.fmfile.com/images/3ClWwmpwkFhL.png',
   );
   // Set state after checking if null
 

@@ -34,7 +34,7 @@ const CallContactContainer = () => {
           call.isTransmitter
             ? getPictureByNumber(call.receiver)
             : !call.isTransmitter && call.isAnonymous
-            ? 'https://i.fivemanage.com/images/3ClWwmpwkFhL.png'
+            ? 'https://i.fmfile.com/images/3ClWwmpwkFhL.png'
             : getPictureByNumber(call?.transmitter)
         }
       />
