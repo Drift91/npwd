@@ -9,13 +9,13 @@ jobs:
  
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Install pnpm
-        uses: pnpm/action-setup@v2.2.2
+        uses: pnpm/action-setup@v4
         with:
           version: latest
 
-      - name: Install dependencis
+      - name: Install dependencies
         run: pnpm i --frozen-lockfile
       - name: Check build status
         run: pnpm build
@@ -31,6 +31,6 @@ jobs:
         
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Lint
         uses: GoatG33k/fivem-lua-lint-action@v1
