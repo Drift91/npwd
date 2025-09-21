@@ -1,4 +1,11 @@
 packages:
-  - 'apps/**'
-  - 'packages/**'
-  - 'core/**'
+  - apps/**
+  - packages/**
+  - core/**
+
+onlyBuiltDependencies:
+  - '@sentry/cli'
+  - '@swc/core'
+  - core-js
+  - core-js-pure
+  - esbuild
