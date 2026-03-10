@@ -91,9 +91,9 @@ jobs:
         id: auto_release
         with:
           environment: "prod"
-          title: NPWD ${{ steps.get_tag.outputs.release_tag }}
+          title: NPWD ${{ inputs.tag }}
           prerelease: false
-          automatic_release_tag: ${{ steps.get_tag.outputs.release_tag }}
+          automatic_release_tag: ${{ inputs.tag }}
           files: npwd.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -142,7 +142,7 @@ jobs:
           cd ./packages/npwd-types
           git config user.email "chip@projecterror.dev"
           git config user.name "itschip"
-          pnpm version --new-version ${{ steps.get_tag.outputs.release_tag }}
+          pnpm version --new-version ${{ inputs.tag }}
       - name: Release @npwd/types
         uses: JS-DevTools/npm-publish@v1
         with:
@@ -156,7 +156,7 @@ jobs:
           pnpm build
           git config user.email "chip@projecterror.dev"
           git config user.name "itschip"
-          pnpm version --new-version ${{ steps.get_tag.outputs.release_tag }}
+          pnpm version --new-version ${{ inputs.tag }}
       - name: Release @npwd/hooks
         uses: JS-DevTools/npm-publish@v1
         with:
