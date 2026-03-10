@@ -41,7 +41,7 @@ export function Profile() {
   // when profile === null results in a react error that different
   // amounts of hooks are rendering
   const [avatarUrl, handleAvatarChange] = useState(
-    profile.avatar_url || 'https://i.fivemanage.com/images/3ClWwmpwkFhL.png',
+    profile.avatar_url || 'https://i.fmfile.com/images/3ClWwmpwkFhL.png',
   );
   const [name, handleNameChange] = useState(profile.profile_name || '');
 
